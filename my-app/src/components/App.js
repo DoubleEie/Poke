@@ -5,6 +5,7 @@ import ReactNotification from 'react-notifications-component'
 import { store } from "react-notifications-component"
 import 'react-notifications-component/dist/theme.css'
 import "animate.css"
+import { BrowserRouter } from 'react-router-dom';
 
 class App extends Component {
 
@@ -26,6 +27,7 @@ class App extends Component {
   }
   render(){
     return (
+      <BrowserRouter>
       <div className="container">
         <div className = "header"> Poke Buddies</div>
 
@@ -41,6 +43,7 @@ class App extends Component {
         <ReactNotification />
         {this.Home()}
       </div>
+      </BrowserRouter>
     );
   }
 
