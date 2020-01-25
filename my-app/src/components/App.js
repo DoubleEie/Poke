@@ -38,12 +38,13 @@ class App extends Component {
           onChangeText = {noteText => this.updateNoteText(noteText)}
           onKeyPress = {this.handleKeyPress.bind(this)}
           />
-        <Home />
+        <ReactNotification />
+        {this.Home()}
       </div>
     );
   }
 
-  Home(){
+  Home(props){
     const handleOnClickDefault = () =>{
       store.addNotification({
         title:"new notification",
@@ -61,7 +62,6 @@ class App extends Component {
       </div>
     )
   }
-
 }
 
 export default App;
