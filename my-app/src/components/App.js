@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../App.css';
-import ReactNotification from 'react-notifications-component'
 
+import ReactNotification from 'react-notifications-component'
 import { store } from "react-notifications-component"
 import 'react-notifications-component/dist/theme.css'
 import "animate.css"
@@ -48,18 +48,50 @@ class App extends Component {
     const handleOnClickDefault = () =>{
       store.addNotification({
         title:"new notification",
-        message: "This is my notification",
+        message: "This is default notification",
         type: "success",
-        container: "top-right",
-        insert: "top"
+        container: "top right",
+        insert: "top",
+        animationIn: ["animated", "fadeIn"],
+        animationOut: ["animated", "fadeOut"],
+        dismiss:{
+          duration: 2000,
+          showIcon: true
+        },
+        width: 250
+
       })
     }
+
+    const handleOnClickCustom = () =>{
+      store.addNotification({
+        //content: MyCustom
+        message: "This is my customized notification",
+        // type: "success",
+        container: "top right",
+        insert: "top",
+        animationIn: ["animated", "fadeIn"],
+        animationOut: ["animated", "fadeOut"],
+        dismiss:{
+          duration: 2000,
+          showIcon: true
+        },
+        width: 250
+
+      })
+    }
+
     return(
       <div>
         <button onClick={handleOnClickDefault}>
-          My Button
+          Click here for a default notification
+        </button>
+        <br></br>
+        <button onClick={handleOnClickCustom}>
+          Click here for a default notification
         </button>
       </div>
+      
     )
   }
 }
