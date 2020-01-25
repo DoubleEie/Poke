@@ -1,5 +1,10 @@
 import React, {Component} from 'react';
 import '../App.css';
+import ReactNotification from 'react-notifications-component'
+
+import { store } from "react-notifications-component"
+import 'react-notifications-component/dist/theme.css'
+import "animate.css"
 
 class App extends Component {
 
@@ -33,9 +38,30 @@ class App extends Component {
           onChangeText = {noteText => this.updateNoteText(noteText)}
           onKeyPress = {this.handleKeyPress.bind(this)}
           />
+        <Home />
       </div>
     );
   }
+
+  Home(){
+    const handleOnClickDefault = () =>{
+      store.addNotification({
+        title:"new notification",
+        message: "This is my notification",
+        type: "success",
+        container: "top-right",
+        insert: "top"
+      })
+    }
+    return(
+      <div>
+        <button onClick={handleOnClickDefault}>
+          My Button
+        </button>
+      </div>
+    )
+  }
+
 }
 
 export default App;
