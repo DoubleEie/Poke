@@ -15,7 +15,15 @@ body {
 }
 /* Our App Container */
 .container {
-  padding-bottom: 80px;
+  padding-bottom: 20px;
+  height: 100%;
+}
+.button-contain{
+  margin-top: 90%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* The header */
 .header {
@@ -32,14 +40,13 @@ body {
 .btn {
   position: fixed;
   z-index: 1;
-  right: 40px;
+  right: 400px;
   bottom: 40px;
-  width: 80px;
+  width: 400px;
   height: 80px;
-  border-radius: 100%;
   text-align: center;
   line-height: 80px;
-  font-size: 60px;
+  font-size: 30px;
   font-weight: bold;
   color: #f1f1f1;
   background: #3367d6;
@@ -50,6 +57,34 @@ body {
   transition: transform .06s ease;
 }
 .btn:hover {
+  transform: scale(1.2);
+}
+.btn-group button{
+  position: relative;
+  width: 33%;
+  bottom: 0;
+  height: 100px;
+  background-color: #3367d6; /* Green background */
+  border: 10px solid #f1f1f1; /* Green border */
+  color: #f1f1f1; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
   transform: scale(1.2);
 }
 /* Textinput */

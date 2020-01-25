@@ -4,11 +4,21 @@ import {Button} from 'reactstrap';
 import '../../App.css';
 const WelcomePage = () =>{
     return(
-        <div>
-        <h3>Welcome to Poke</h3>
-        <Link to = "/NotificationPage">
-            <Button renderAs = "btn">Click to Continue</Button>
-        </Link>
+        <div className = "container">
+            <div className = "header">Welcome to Poke</div>
+                <div className = "button-contain">
+                    <div className = "btn-group">
+                        <Link to = "/create">
+                            <button>Create</button>
+                        </Link>
+                        <Link to = "/join">
+                            <button>Join</button>
+                        </Link>
+                        <Link to = "/user">
+                            <button>User Page</button>
+                        </Link>
+                    </div>
+                </div>
         </div>
     );
 };
