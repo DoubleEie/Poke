@@ -65,8 +65,7 @@ class App extends Component {
 
     const handleOnClickCustom = () =>{
       store.addNotification({
-        title:"new notification",
-        message: "This is customized notification",
+        content: this.MyNotification(),
         type: "success",
         container: "top-right",
         insert: "top",
@@ -95,6 +94,14 @@ class App extends Component {
     )
   }
 
+  MyNotification(){
+    return(
+      <div>
+        <header>This is my notification</header>
+      </div>
+
+    )
+  }
   
 
 }
