@@ -50,7 +50,7 @@ class App extends Component {
         title:"new notification",
         message: "This is default notification",
         type: "success",
-        container: "top right",
+        container: "top-right",
         insert: "top",
         animationIn: ["animated", "fadeIn"],
         animationOut: ["animated", "fadeOut"],
@@ -65,10 +65,10 @@ class App extends Component {
 
     const handleOnClickCustom = () =>{
       store.addNotification({
-        //content: MyCustom
-        message: "This is my customized notification",
-        // type: "success",
-        container: "top right",
+        title:"new notification",
+        message: "This is customized notification",
+        type: "success",
+        container: "top-right",
         insert: "top",
         animationIn: ["animated", "fadeIn"],
         animationOut: ["animated", "fadeOut"],
@@ -86,14 +86,17 @@ class App extends Component {
         <button onClick={handleOnClickDefault}>
           Click here for a default notification
         </button>
-        <br></br>
+        
         <button onClick={handleOnClickCustom}>
-          Click here for a default notification
+          Click here for a customized notification
         </button>
       </div>
       
     )
   }
+
+  
+
 }
 
 export default App;
