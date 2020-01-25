@@ -1,16 +1,15 @@
-import React, {Component} from 'react';
-import '../App.css';
+import React from "react";
+import {Link} from "react-router-dom";
+import {Button} from 'reactstrap';
 
-import ReactNotification from 'react-notifications-component'
-import { store } from "react-notifications-component"
-import 'react-notifications-component/dist/theme.css'
-import "animate.css"
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import SignIn from './auth/signin';
+const NotificationPage = () =>{
+    return(
+      <h2>Notification page</h2>
+    );
 
-class App extends Component {
-
-  constructor(props){
+    //Notifcations reference
+    /*
+     constructor(props){
     super(props);
     this.state = {
         noteText: '',
@@ -112,6 +111,7 @@ class App extends Component {
   }
   
 
-}
+*/
+};
 
-export default App;
+export default NotificationPage;
