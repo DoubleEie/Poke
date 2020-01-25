@@ -20,6 +20,10 @@ class JoinPage extends Component{
             [event.target.name]: event.target.value
         })
     }
+    trackVal = (event) => {
+        var passVal = this.setState;
+        console.log(passVal);
+    }
     render(){
     const{code} = this.state
     return(
@@ -29,9 +33,9 @@ class JoinPage extends Component{
             Join a Party !</div>
             <div className = "code-enter">
             <form onSubmit = {this.handleSubmit}>
-                <p><input type = 'text' placeholder ='Poke Code' code = 'code'onChange = {this.handleInputChange}/></p>
-                <Link to = "/">
-                <p className = "create-join-btn"><button>Join</button></p>
+                <p><input type = 'text' placeholder ='Poke Code' code = 'code'onChange = {(event) =>code(event.target.value)}/></p>
+                <Link to = "/user">
+                <p className = "create-join-btn"><button onClick = {this.trackVal}>Join</button></p>
                 </Link>
             </form>
         </div>    
