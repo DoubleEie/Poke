@@ -14,11 +14,13 @@ import NotFoundPage from "./components/pages/NotFoundPage";
 import CreatePage from "./components/pages/CreatePage";
 import JoinPage from "./components/pages/JoinPage";
 import UserPage from "./components/pages/UserPage";
+import PokePage from "./components/pages/PokePage.js";
 
 class App extends Component {
 
   render(){
     return (
+      //Put redirect.
       <Router>
         <Switch>
           <Route exact path = "/" component = {WelcomePage}/>
@@ -27,7 +29,7 @@ class App extends Component {
           <Route exact path = "/create" component = {CreatePage}/>
           <Route exact path = "/user" component = {UserPage}/>
           <Route exact path = "/join" component = {JoinPage}/>
-          <Redirect to = "/404"/>
+          <Route exact path = "/poke" component = {PokePage}/>
         </Switch>
       </Router>
      
