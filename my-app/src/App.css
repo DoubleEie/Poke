@@ -19,7 +19,7 @@ body {
   margin-bottom: 0px;
 }
 .button-contain{
-  margin-top: 500px;
+  margin-top: 250px;
   margin-bottom: auto;
   padding-bottom: 0%;
   margin-left: auto;
@@ -147,4 +147,18 @@ input{
 }
 .create-join-btn button:hover {
   transform: scale(1.1);
+}
+.image-container{
+  height: 100%;
+  width: auto;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:40%;
+}
+img{
+  height: 500px;
+  width: 300px;
+  max-width: 50%;
+  max-height:25%;
+  
 }
