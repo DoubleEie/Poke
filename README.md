@@ -12,9 +12,9 @@ Poke is created by Purdue students as part of the [Boilermake 2020](https://boil
 
 ## Visuals
 <p float="left">
-<img src="./my-app/src/images/WelcomePage.jpg" width="150px" height="250px" />
+<img src="./my-app/src/images/WelcomePage.jpg" width="300px" height="500px" />
 
-<img src="./my-app/src/images/CreatePage.jpg" width="150px" height="250px" style = "margin-left: 15px" />
+<img src="./my-app/src/images/CreatePage.jpg" width="300px" height="500px" style = "margin-left: 50px" />
 </p>
 
 ## Project status
