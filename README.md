@@ -11,9 +11,8 @@ Poke is an unique type of social networking platform that gives users a differen
 Poke is created by Purdue students as part of the [Boilermake 2020](https://boilermake.org) project.
 
 ## Visuals
-[Welcoming page](./my-app/src/images/WelcomePage.jpg)
-
-[Create page](my-app/src/images/CreatePage.jpg)
+![Welcoming page](./my-app/src/images/WelcomePage.jpg)
+![Create page](my-app/src/images/CreatePage.jpg)
 
 
 ## Project status
